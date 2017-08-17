@@ -2,126 +2,104 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Alessandro da Silva Santos
+ * StudentID: 300927354
+ * Date: 17/08/2017
+ * Description: create a score
+ * Version: 0.2 create a score method.;
  */
 
-namespace COMP123_S2017_FinalExam_StudentID
+namespace COMP123_S2017_FinalExam_300927354
 {
     public class ScoreBoard
     {
-        // PRIVATE INSTANCE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // Fields private
+        private TextBox _finalScoreTextBox;
         private int _score;
+        private TextBox _scoreTextBox;
         private int _time;
-        TextBox _timeTextBox;
-        TextBox _scoreTextBox;
-        TextBox _finalScoreTextBox;
-
-        // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-        public int Score
-        {
-            get
-            {
-                return this._score;
-            }
-
-            set
-            {
-                this._score = value;
-                this.ScoreTextBox.Text = this._score.ToString();
-                this.FinalScoreTextBox.Text = this._score.ToString();
-            }
-        }
-
-        public int Time
-        {
-            get
-            {
-                return this._time;
-            }
-
-            set
-            {
-                this._time = value;
-                this.TimeTextBox.Text = this._time.ToString();
-            }
-        }
-
-        public TextBox TimeTextBox
-        {
-            get
-            {
-                return this._timeTextBox;
-            }
-
-            set
-            {
-                this._timeTextBox = value;
-            }
-        }
-
-        public TextBox ScoreTextBox
-        {
-            get
-            {
-                return this._scoreTextBox;
-            }
-
-            set
-            {
-                this._scoreTextBox = value;
-            }
-        }
-
+        private TextBox _timeTextBox;
+        // propriety public
         public TextBox FinalScoreTextBox
         {
             get
             {
                 return this._finalScoreTextBox;
             }
-
             set
             {
                 this._finalScoreTextBox = value;
             }
         }
-
-        // CONSTRUCTORS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        /// <summary>
-        /// This is the main constructor.
-        /// scoreTextBox and timeTextBox are references to the TextBoxes on the Form
-        /// </summary>
-        /// <param name="scoreTextBox"></param>
-        /// <param name="timeTextBox"></param>
-        public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        public int Score
         {
-            this.ScoreTextBox = scoreTextBox;
-            this.TimeTextBox = timeTextBox;
-            this.FinalScoreTextBox = finalScoreTextBox;
+            get
+            {
+                return this._score;
+            }
+            set
+            {
+                this._score = value;
+                ScoreTextBox.Text = Convert.ToString(this._score);
+                FinalScoreTextBox.Text = Convert.ToString(this._score);
+            }
+        }
+        public TextBox ScoreTextBox
+        {
+            get
+            {
+                return this._scoreTextBox;
+            }
+            set
+            {
+                this._scoreTextBox = value;
+            }
+        }
+        public int Time
+        {
+            get
+            {
+                return this._time;
+            }
+            set
+            {
+                this._time = value;
+                TimeTextBox.Text = Convert.ToString(this._time);
+            }
+        }
+        public TextBox TimeTextBox
+        {
+            get
+            {
+                return this._timeTextBox;
+            }
+            set
+            {
+                this._timeTextBox = value;
+            }
         }
 
+        // Constructor
+        public ScoreBoard(TextBox scoreTextBox, TextBox TimeTextBox, TextBox finalScoreTextBox)
+        {
 
-        // PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        }
+        //private method
 
-        // PUBLIC METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+        // public method
         /// <summary>
-        /// This method Updates the Time TextBox
+        ///
         /// </summary>
-        /// <param name="TimeTextBox"></param>
         public void UpdateTime()
         {
-            this.Time = Convert.ToInt32(this.TimeTextBox.Text);
-            Time -= 1;
-            this.TimeTextBox.Text = this.Time.ToString();
+            Time = Convert.ToInt32(TimeTextBox.Text) - 1;
+            TimeTextBox.Text = Convert.ToString(this.Time);
         }
-
     }
 }
+
