@@ -26,7 +26,7 @@ namespace COMP123_S2017_FinalExam_StudentID
             Application.SetCompatibleTextRenderingDefault(false);
             PickHighestCardForm = new PickHighestCardForm();
             Application.Run(new SplashForm());
-            // created but is not work in this moment
+
         }
     }
 }

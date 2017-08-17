@@ -16,14 +16,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2017_FinalExam_StudentID.Deck" Collapsed="true">
-    <Position X="2.75" Y="2.5" Width="1.5" />
+    <Position X="3.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAACAAAAAEAAAAAAQAAAAABAAAAAAAAAAAEAE=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2017_FinalExam_StudentID.Hand" Collapsed="true">
-    <Position X="1.25" Y="2.25" Width="1.5" />
+    <Position X="0.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAACAAAAAGAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hand.cs</FileName>
@@ -36,8 +36,8 @@
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="COMP123_S2017_FinalExam_StudentID.SplashForm" Collapsed="true">
-    <Position X="0.75" Y="3.25" Width="1.5" />
+  <Class Name="COMP123_S2017_FinalExam_StudentID.SplashForm">
+    <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAABAAAACAAAACAAAAIAAEAAAAAAAAAAA=</HashCode>
       <FileName>SplashForm.cs</FileName>
@@ -50,8 +50,8 @@
       <FileName>ScoreBoard.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="COMP123_S2017_FinalExam_StudentID.Face" Collapsed="true">
-    <Position X="0.75" Y="1.5" Width="1.5" />
+  <Enum Name="COMP123_S2017_FinalExam_StudentID.Face">
+    <Position X="2.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
       <FileName>Face.cs</FileName>
