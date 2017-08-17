@@ -10,7 +10,7 @@ using System.Windows.Forms;
  * StudentID: 300927354
  * Date: 17/08/2017
  * Description: create a score
- * Version: 0.2 create a score method.;
+ * Version: 0.3 create a constroctor.;
  */
 
 namespace COMP123_S2017_FinalExam_300927354
@@ -87,7 +87,9 @@ namespace COMP123_S2017_FinalExam_300927354
         // Constructor
         public ScoreBoard(TextBox scoreTextBox, TextBox TimeTextBox, TextBox finalScoreTextBox)
         {
-
+            this.ScoreTextBox = _scoreTextBox;
+            this.TimeTextBox = _timeTextBox;
+            this.FinalScoreTextBox = _finalScoreTextBox;
         }
         //private method
 
@@ -99,6 +101,7 @@ namespace COMP123_S2017_FinalExam_300927354
         {
             Time = Convert.ToInt32(TimeTextBox.Text) - 1;
             TimeTextBox.Text = Convert.ToString(this.Time);
+
         }
     }
 }
